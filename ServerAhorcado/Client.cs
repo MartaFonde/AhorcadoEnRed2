@@ -80,8 +80,7 @@ namespace ServerAhorcado
                                     break;
 
                                 case CLOSE_SERVER:                                        
-                                    sw.WriteLine(Server.serverAction(s, msg));
-                                    sw.Flush(); 
+                                    Server.serverAction(s, msg);
                                     break;
                             }                            
                         } 

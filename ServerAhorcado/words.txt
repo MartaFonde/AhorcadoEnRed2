@@ -5,7 +5,6 @@ palloza
 cacharela
 luar
 vento
-lóstrego
 calabaza
 lirio
 planta
@@ -13,7 +12,6 @@ durmir
 lugar
 platano
 casa
-jajja
 julio
 pc
 ukelele
@@ -24,5 +22,4 @@ internet
 carballo
 godofello
 virus
-lugar
-lugar
+carrocería

@@ -80,7 +80,7 @@ namespace ServerAhorcado
                 using (StreamWriter sw = new StreamWriter(ns))
                 {
                     if (msg != null && msg.Trim().Split(' ').Length > 0)
-                    {                            
+                    {
                         switch (msg.Split(' ')[0])
                         {
                             case SEND_WORD:
@@ -89,9 +89,9 @@ namespace ServerAhorcado
                                     lock (l)
                                     {
                                         WriteFileWord(msg.Split(' ')[1]);
-                                    }                                        
+                                    }
                                 }
-                                break;                                            
+                                break;
                             case GET_WORD:
                                 if (msg.Split(' ').Length == 1)
                                 {
@@ -100,7 +100,7 @@ namespace ServerAhorcado
                                         string word = GetWord();
                                         Console.WriteLine(word);
                                         return word;
-                                    }                                        
+                                    }
                                 }
                                 break;
                             case SEND_RECORD:
@@ -119,18 +119,18 @@ namespace ServerAhorcado
                                                 {
                                                     return "True";
                                                 }
-                                            }                                               
+                                            }
                                         }
                                         else //record tiempo nombre ip
                                         {
                                             IPAddress ip;
-                                            if(msg.Split(' ')[2].Length == 3 && IPAddress.TryParse(msg.Split(' ')[3], out ip))
+                                            if (msg.Split(' ')[2].Length == 3 && IPAddress.TryParse(msg.Split(' ')[3], out ip))
                                             {
                                                 lock (l)
                                                 {
                                                     WriteRecord(msg);
-                                                }                                                    
-                                            }                                                    
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -140,8 +140,8 @@ namespace ServerAhorcado
                                 {
                                     lock (l)
                                     {
-                                        return ReadRecordsToSend(); 
-                                    }                                        
+                                        return ReadRecordsToSend();
+                                    }
                                 }
                                 break;
                             case CLOSE_SERVER:
@@ -150,7 +150,7 @@ namespace ServerAhorcado
                                     if (msg.Split(' ')[1] == psw)
                                     {
                                         lock (l)
-                                        {                                            
+                                        {
                                             foreach (Client c in clients)
                                             {
                                                 c.s.Close();
@@ -159,9 +159,9 @@ namespace ServerAhorcado
                                         }
                                         return "True";
                                     }
-                                }                                        
+                                }
                                 break;
-                        }                                
+                        }
                     }
                 }
             }

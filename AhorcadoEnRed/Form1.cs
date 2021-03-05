@@ -29,7 +29,6 @@ namespace AhorcadoEnRed
 
         string word;
         List<char> letters = new List<char>();
-        string records;
         Label lblLetter;
         int posY = 100;
         int posX = 15;
@@ -98,20 +97,6 @@ namespace AhorcadoEnRed
                                 }
                                 MessageBox.Show(rec, "Records");
                                 break;
-
-                            //case CLOSE_SERVER:
-                            //    msgFromServer = sr.ReadLine();
-                            //    if (msgFromServer == "True")
-                            //    {                                    
-                            //        MessageBox.Show(Properties.Resources.PswMsgOK,
-                            //            Properties.Resources.CloseServerTitle);
-                            //    }
-                            //    else
-                            //    {
-                            //        MessageBox.Show(Properties.Resources.PswMsgInc,
-                            //            Properties.Resources.CloseServerTitle);
-                            //    }
-                            //    break;
 
                         }
                     }

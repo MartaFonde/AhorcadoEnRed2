@@ -96,14 +96,6 @@ namespace Dibujo
                     goto case 5;
             }
             pen.Dispose();
-
-            //g.DrawEllipse(pen, new Rectangle(w/8*5, h/8, w/8*2, h/8*2));    //1
-            //g.DrawLine(pen, new Point(w / 8 * 6, h/8 * 3), new Point(w / 8 * 6, h / 8 * 6));        //2
-            //g.DrawLine(pen, new Point(w / 8 * 6, h/8 * 4), new Point(w / 8 * 5, h / 8 * 5));    //3
-            //g.DrawLine(pen, new Point(w / 8 * 6, h/8 * 4), new Point(w / 8 * 7, h / 8 * 5));    //4
-            //g.DrawLine(pen, new Point(w / 8 * 6, h/8 * 6), new Point(w / 8 * 5, h / 8 * 7));    //5
-            //g.DrawLine(pen, new Point(w / 8 * 6, h/8 * 6), new Point(w / 8 * 7, h / 8 * 7));    //6
-
         }
     }
 }
